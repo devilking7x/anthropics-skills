@@ -94,3 +94,15 @@ The markdown content below contains the instructions, examples, and guidelines t
 Skills are a great way to teach Claude how to get better at using specific pieces of software. As we see awesome example skills from partners, we may highlight some of them here:
 
 - **Notion** - [Notion Skills for Claude](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0)
+
+# What's new in this fork — Raza7x Advanced
+
+This fork ([devilking7x/skills](https://github.com/devilking7x/skills)) adds five security skills by Mohd Raja (Raza7x), a security researcher and bug bounty hunter. **All 19 upstream Anthropic skills are unchanged** — byte-identical to [anthropics/skills](https://github.com/anthropics/skills). The fork now holds **24 skills total: 19 upstream + 5 new**.
+
+- **bug-bounty-hunting** — Hunts vulnerabilities on authorized bug bounty programs and writes reports that survive triage: scope/fee pre-flight, a five-source duplicate check, runnable PoCs, honest CVSS scoring, and triage lifecycle handling.
+- **secret-management** — Full lifecycle of secrets (API keys, tokens, passwords, private keys, cloud credentials): inventory, vault storage, `.env` hygiene, leak scanning, least-privilege access, runtime injection, rotation, and leaked-secret incident response.
+- **incident-response** — Runs a security or production incident end to end, from declaration to blameless postmortem, following the NIST SP 800-61 Rev. 3 lifecycle and the SANS PICERL model.
+- **api-security-audit** — Audits and tests REST, GraphQL, and webhook APIs for security flaws: BOLA/BFLA with two-account testing, JWT and OAuth flaws, mass assignment, rate-limit and business-logic abuse, and webhook verification.
+- **supply-chain-security** — Secures the software supply chain from dependency to deployed artifact: lockfile discipline, SBOMs, provenance and signing, typosquatting defenses, audit triage, and malicious-dependency incident handling.
+
+Each new skill lives in its own folder under [`skills/`](./skills) with a `SKILL.md` and an Apache 2.0 `LICENSE.txt`, in the same format as the upstream skills.
